@@ -1,0 +1,86 @@
+.presentation{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: lightsalmon;
+}
+#summary{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	color: white;
+}
+#summary h2{
+	margin: 2em;
+}
+#summary a{
+	margin: 2em;
+	height: 40px;
+	width: 90px;
+	border-radius: 8px;
+}
+#summary button{
+	height: 40px;
+	width: 90px;
+	background-color: #1fba9d;
+	color: white;
+	border: 0px;
+	border-radius: 8px;
+	font-size: 1em;
+}
+#summary button:hover{
+	cursor: pointer;
+}
+
+#video{
+	display: flex;
+	justify-content: center;
+	background-color: lightpink;
+	margin-top: 4em;
+	width: 25em;
+	height: 15em;
+}
+#video img{
+	width: 25em;
+	height: 15em;
+	object-fit: cover;
+}
+
+.bottom{
+	background-color: lightblue;
+	height: 50vh;
+	margin: 6vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.bottom h2{
+	background-color: lightseagreen;
+	margin: 2em;
+}
+#icons{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#icons li{
+	height: 150px;
+	width: 150px;
+
+	background-color: lightpink;
+}
+
+
+.footer{
+	background-color: lightgreen;
+	height: 10vh;
+}
+#copyright{
+	display: flex;
+	justify-content: center;
+	padding-top: 4vh;
+	color: white;
+}
