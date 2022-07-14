@@ -1,0 +1,10 @@
+.footer{
+	background-color: lightgreen;
+	height: 10vh;
+}
+#copyright{
+	display: flex;
+	justify-content: center;
+	padding-top: 4vh;
+	color: white;
+}

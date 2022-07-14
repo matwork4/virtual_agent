@@ -1,0 +1,43 @@
+.main{
+	height: 80vh;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#mei_chan{
+	width: 60%;
+	background-color: lightcoral;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#mei_chan img{
+	height: 50vh;
+	background-color: lightpink;
+	object-fit: contain;
+}
+#mei_chan p{
+	margin: 4vh;
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+	font-size: 2em;
+	border-radius: 8px;
+}
+
+#history_panel{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+}
+#history_panel h2{
+	text-align: center;
+	background-color: lightgreen;
+}
+#history_panel #chatbox{
+	height: 80%;
+	background-color: lightblue;
+	margin: 4vh;
+	border-radius: 8px;
+}
