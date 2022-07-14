@@ -1,43 +1,69 @@
 .main{
-	height: 80vh;
+	height: 90vh;
 	background-color: whitesmoke;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	background-image: url("../assets/img/bg.png");
+	background-repeat: repeat;
+	background-position: right bottom;
+	background-size: contain;
 }
 #mei_chan{
-	width: 60%;
-	background-color: lightcoral;
+	width: 65%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
 #mei_chan img{
 	height: 50vh;
-	background-color: lightpink;
+	/*background-color: lightpink;*/
 	object-fit: contain;
 }
-#mei_chan p{
+#mei_chan .bubble, #mei_chan input{
 	margin: 4vh;
-	background-color: lightgoldenrodyellow;
+	background-color: ivory;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.4em;
 	border-radius: 8px;
+}
+#mei_chan #reply{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#mei_chan #submit{
+	font-size: 1em;
+	border: 0px;
+	box-shadow: 2px 2px 5px black;
+	background-color: white;
+}
+#mei_chan #submit:hover{
+	cursor: pointer;
+	background-color: lightgrey;
+	transition: 0.2s;
+}
+#reply{
+	/*visibility: hidden;*/ /*Visible lors d'une réponse attendue*/
 }
 
 #history_panel{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 40%;
+	width: 35%;
 }
 #history_panel h2{
 	text-align: center;
-	background-color: lightgreen;
+	color: black;
+	/*background-color: lightgreen;*/
 }
 #history_panel #chatbox{
 	height: 80%;
-	background-color: lightblue;
-	margin: 4vh;
-	border-radius: 8px;
+	background-color: #fff;
+	margin: 3vh;
+	border-radius: 2px;
+	overflow-y: auto;
+	/*border: 1px solid black;*/
+	box-shadow: 2px 2px 5px black;
 }

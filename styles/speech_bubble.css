@@ -1,0 +1,24 @@
+/* Source : 
+ * https://codepen.io/perossing/pen/WZorxv
+ */
+
+.bubble {
+	padding: 4px;
+	padding-top: 10px;
+	/*visibility: hidden;*/ /*Hidden lorsqu'elle ne parle pas*/
+	box-shadow: 3px 3px 3px black;
+}
+
+.pointer {
+	height: 35px;
+	width: 35px;
+	background: ivory;
+	margin: 0 auto;
+	border-radius: 0 0 4px 0;
+	margin-top: -20px;
+	position: relative;
+	left: calc(0.5vw - 50px);
+	transform: translateX(100px) translateY(20px) rotate(45deg);
+	box-shadow: 3px 3px 3px black;
+}
+
