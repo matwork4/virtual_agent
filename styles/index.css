@@ -62,8 +62,8 @@ body{
 
 .bottom{
 	/*background-color: lightblue;*/
-	background: linear-gradient(0deg, rgba(80,140,180,1) 10%, rgba(235,235,235,1) 100%);
-	height: 50vh;
+	background: linear-gradient(0deg, rgba(75,135,175,1) 10%, rgba(235,235,235,1) 100%);
+	height: 80vh;
 	margin: 6vh;
 	margin-bottom: 0;
 	display: flex;
@@ -73,22 +73,33 @@ body{
 	border-radius: 10px;
 	transform: translateY(-12vh);
 	box-shadow: 2px 2px 5px black;
+	color: white;
 }
 .bottom h2{
 	/*background-color: lightseagreen;*/
-	margin: 1em;
+	/*margin: 1em;*/
 	color: rgba(30,90,130,1);
+	margin-left: 2em;
 }
-#icons{
+
+.bottom #panels{
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
-#icons li{
+.bottom #panels img{
 	height: 150px;
 	width: 150px;
 	border-radius: 8px;
 	background-color: whitesmoke;
+}
+.bottom #panels h3{
+	margin: 4vh;
+	font-size: 1.4em;
+}
+.bottom #panels p{
+	font-size: 1em;
+	width: 280px;
 }
 

@@ -4,28 +4,33 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	background-image: url("../assets/img/bg.png");
-	background-repeat: repeat;
-	background-position: right bottom;
-	background-size: contain;
+	background-image: url("../assets/img/japan_street.jpg");
+	/*background-repeat: repeat;*/
+	background-position: bottom;
+	/*background-size: cover;*/
 }
 #mei_chan{
-	width: 65%;
+	width: 70%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
 #mei_chan img{
-	height: 50vh;
+	transform: translateY(5%) translateX(2%);
+	height: 48vh;
 	/*background-color: lightpink;*/
 	object-fit: contain;
 }
 #mei_chan .bubble, #mei_chan input{
-	margin: 4vh;
+	margin: 5vh;
 	background-color: ivory;
 	text-align: center;
 	font-size: 1.4em;
 	border-radius: 8px;
+}
+#mei_chan .bubble{
+	margin-left: 12vh;
+	margin-right: 12vh;
 }
 #mei_chan #reply{
 	display: flex;
@@ -51,12 +56,18 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 35%;
+	width: 30%;
 }
 #history_panel h2{
 	text-align: center;
 	color: black;
-	/*background-color: lightgreen;*/
+	background-color: rgba(240,240,240,0.9);
+	margin-left: 12vh;
+	margin-right: 12vh;
+	padding: 0.6vh;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px black;
+	font-size: 1.3em;
 }
 #history_panel #chatbox{
 	height: 80%;
