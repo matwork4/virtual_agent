@@ -33,13 +33,17 @@
 				<div class="pointer"></div>
 			</div>
 			<img src="../assets/img/mei.gif" alt="Cute robot">
+			<!--
 			<form action="#">
 				<div id='reply'>
-  					<!--<label for="fname">Enter text :</label>-->
   					<input type="text" id="reply" name="reply"><br>
-  					<input type="submit" value="Submit" id='submit'>
+  					<input type="submit" value="Submit" id='submit' onclick="getSubmit(value)">
   				</div>
-			</form>
+			</form>-->
+			<div id='reply'>
+  				<input type="text" id="reply_field" name="reply"><br>
+  				<input type="submit" value="Submit" id='submit' onclick="getSubmit()">
+  			</div>
 		</div>
 		<div id='history_panel'>
 			<h2>Chat History</h2>
@@ -60,6 +64,9 @@
 	</div>
 	<div class='footer'>
 		<p id='copyright'>Copyright © Mathis Ruffieux, 2022</p>
+	</div>
+	<div class='scripts'>
+		<script type="text/javascript" src="../js/views/mei_chan.js"></script>
 	</div>
 </body>
 </html>
