@@ -28,7 +28,7 @@
 	<div class='main'>
 		<div id='mei_chan'>
 			<!--<p>Phrase de Mei Chan</p>-->
-			<div class="bubble">
+			<div class="bubble" id='bubble'>
 				<p>Bonjour, ceci est une très longue phrase </p>
 				<div class="pointer"></div>
 			</div>
@@ -52,12 +52,14 @@
 				<p>Message 1</p>
 				<p>Message 2</p>
 				<p>Message 3</p>-->
-				<div class="imessage">
+				<div class="imessage" id='imessage'>
+					<!--
     				<p class="from-them">It was loud. We just laid there and said &ldquo;is this an earthquake? I think this is an earthquake.&rdquo;</p>
     				<p class="from-me">Like is this an earthquake just go back to sleep</p>
     				<p class="from-them margin-b_one">It&rsquo;s more like &ldquo;this is an earthquake. Check the Internet. Yup. Earthquake. This is the size. This is the epicenter. Check social media. Make sure the East Coast knows I&rsquo;m alive. Okay, try and go back to sleep.&rdquo;</p>
     				<p class="from-me no-tail emoji">👍🏻</p>
-    				<p class="from-me">Glad you&rsquo;re safe</p>
+    				<p class="from-me">Glad you&rsquo;re safe</p>-->
+    				<p class="from-them">Bonjour, ceci est une très longue phrase</p>
   				</div>
 			</div>
 		</div>
@@ -66,7 +68,16 @@
 		<p id='copyright'>Copyright © Mathis Ruffieux, 2022</p>
 	</div>
 	<div class='scripts'>
+		<!-- Models -->
+		<script type="text/javascript" src="../js/models/Message.js"></script>
+		<script type="text/javascript" src="../js/models/Question.js"></script>
+		<script type="text/javascript" src="../js/models/RelationQR.js"></script>
+		<script type="text/javascript" src="../js/models/Reply.js"></script>
+		<script type="text/javascript" src="../js/models/Scenario.js"></script>
+		<script type="text/javascript" src="../js/models/Variable.js"></script>
+		<!-- Scripts -->
 		<script type="text/javascript" src="../js/views/mei_chan.js"></script>
+		<script type="text/javascript" src="../js/controllers/scenarioController.js"></script>
 	</div>
 </body>
 </html>
