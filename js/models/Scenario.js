@@ -2,15 +2,9 @@ class Scenario{
 
 	constructor(){
 		this.questions = [];
-		this.replies = []; //Que des questions ouvertes ? + analyse syntaxique
-		this.relationsQR = []; //Pas besoin non plus
+		this.replies = []; 
 		this.variables = [];
-		this.currentReplies = []; //On le fait ou pas ? 
-		//Ou on remplace par de l'analyse syntaxique
 
-		this.isClosedQuestion = false;
-		this.isOpenQuestion = false;
-		//this.isResumeScenario = false;
 	}
 
 	/* Ajoute une question a la fin de la liste
@@ -30,34 +24,19 @@ class Scenario{
 		}
 	}
 
-	/* Ajoute une réponse a la fin de la liste
+	/* Ajoute une réponse (réquivalent relation QQ) a la fin de la liste
 	*/
 	addReply(r){
 		this.replies.push(r);
 	}
 
+
 	/* Retire une réponse en fonction de son ID
 	*/
-	removeReply(idReply){
+	removeReply(reply){
 		for(let i=0; i<this.replies.length;i++){
-			if(this.replies[i].id == idReply){
+			if(this.replies[i].id == reply){
 				this.replies.splice(i,1);
-			}
-		}
-	}
-
-	/* Ajoute une relation QR a la fin de la liste
-	*/
-	addRelationQR(r){
-		this.relationsQR.push(r);
-	}
-
-	/* Retire une relation QR en fonction de son ID
-	*/
-	removeRelationQR(idRelationQR){
-		for(let i=0; i<this.relationsQR.length;i++){
-			if(this.relationsQR[i].id == idRelationQR){
-				this.relationsQR.splice(i,1);
 			}
 		}
 	}
