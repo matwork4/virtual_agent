@@ -31,6 +31,7 @@
 #mei_chan .bubble{
 	margin-left: 12vh;
 	margin-right: 12vh;
+	visibility: hidden; /*Visible lorsque Mei Chan parle*/
 }
 #mei_chan #reply{
 	display: flex;
@@ -49,7 +50,7 @@
 	transition: 0.2s;
 }
 #reply{
-	/*visibility: hidden;*/ /*Visible lors d'une réponse attendue*/
+	visibility: hidden; /*Visible lors d'une réponse attendue*/
 }
 
 #history_panel{

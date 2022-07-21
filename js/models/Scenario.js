@@ -3,8 +3,6 @@ class Scenario{
 	constructor(){
 		this.questions = [];
 		this.replies = []; 
-		this.variables = [];
-
 	}
 
 	/* Ajoute une question a la fin de la liste
@@ -24,6 +22,14 @@ class Scenario{
 		}
 	}
 
+	getQuestionById(idQuestion){
+		for(let i=0; i<this.questions.length;i++){
+			if(this.questions[i].id == idQuestion){
+				return this.questions[i];
+			}
+		}
+	}
+
 	/* Ajoute une réponse (réquivalent relation QQ) a la fin de la liste
 	*/
 	addReply(r){
@@ -33,26 +39,18 @@ class Scenario{
 
 	/* Retire une réponse en fonction de son ID
 	*/
-	removeReply(reply){
+	removeReply(idReply){
 		for(let i=0; i<this.replies.length;i++){
-			if(this.replies[i].id == reply){
+			if(this.replies[i].id == idReply){
 				this.replies.splice(i,1);
 			}
 		}
 	}
 
-	/* Ajoute une variable a la fin de la liste
-	*/
-	addVariable(v){
-		this.variables.push(v);
-	}
-
-	/* Retire une variable en fonction de son ID
-	*/
-	removeVariable(idVariable){
-		for(let i=0; i<this.variables.length;i++){
-			if(this.variables[i].id == idVariable){
-				this.variables.splice(i,1);
+	getReplyById(idReply){
+		for(let i=0; i<this.replies.length;i++){
+			if(this.replies[i].id == idReply){
+				return this.replies[i];
 			}
 		}
 	}

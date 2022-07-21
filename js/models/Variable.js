@@ -1,7 +1,6 @@
 class Variable{
 
-	constructor(id, name, value){
-		this.id = id;
+	constructor(name, value){
 		this.name = name;
 		this.value = value;
 	}

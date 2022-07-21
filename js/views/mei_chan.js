@@ -5,9 +5,11 @@
 function getSubmit(){
 	let element = document.getElementById("reply_field");
 	let text = element.value;
-	//console.log(text);
+
 	addMessageHistory(text,true);
 	hideReply(true);
+
+	userReply(text);
 }
 
 /* Ajoute un message dans le chat history
@@ -31,10 +33,11 @@ function addMessageHistory(text, isSentByMe){
 *  False : re-Affiche
 */
 function hideBubble(b){
+	var element = document.getElementById("bubble");
 	if(b){
-		document.getElementById("bubble").style.visibility = "hidden";
+		element.style.visibility = "hidden";
 	}else{
-		document.getElementById("bubble").style.visibility = "visible";
+		element.style.visibility = "visible";
 	}
 }
 
@@ -42,11 +45,27 @@ function hideBubble(b){
 *  False : re-Affiche
 */
 function hideReply(b){
+	var element = document.getElementById("reply");
 	if(b){
-		document.getElementById("reply").style.visibility = "hidden";
+		element.style.visibility = "hidden";
 	}else{
-		document.getElementById("reply").style.visibility = "visible";
+		element.style.visibility = "visible";
 	}
+}
+
+/* Efface le texte de l'input de réponse
+*/
+function clearReply(){
+	document.getElementById("reply_field").value = "";
+}
+
+/* Affiche la bulle de Mei Chan avec du texte
+*/
+function displayBubble(text){
+	var element = document.getElementById("textBubble");
+	element.textContent = text;
+	hideBubble(false);
+	addMessageHistory(text,false);
 }
 
 
