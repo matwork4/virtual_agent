@@ -252,7 +252,7 @@ var currentScenario = new Scenario();
  * 1 : FR
  * 2 : JP
 */
-var lang = 1;
+var lang = 0;
 
 setQuestionsByIdScenario(ID_SCENARIO,currentScenario);
 setRepliesByIdScenario(ID_SCENARIO,currentScenario);

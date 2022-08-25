@@ -18,12 +18,11 @@ _listOfQuestions = [
 	new Question(14,2,"What interesting things did you do today?","Qu'avez-vous fait d'interessant aujourd'hui ?","今日はどんな面白いことをしましたか？",false,false,true,"none"),
 	new Question(15,2,"This is interesting","C'est intéressant","それは面白い",false,true,false,"none"),
 
-new Question(30,3,"","Bonjour ! ","",true,false,false,"31"),
-new Question(31,3,"","Ceci est un test. ça marche ? ","",false,false,true,"none"),
-new Question(32,3,"","Alors, quelle est ta couleur préférée ? ","",false,false,true,"color"),
-new Question(33,3,"","Dommage ...","",false,false,false,"32"),
-new Question(34,3,"","Je repose la question.","",false,false,false,"31"),
-new Question(35,3,"","Moi aussi j'aime le %%color !","",false,true,false,"none"),
+new Question(20,3,"Your favorite color is %%favoriteColor !","","",false,true,false,"none"),
+new Question(21,3,"Hello, this is a test.","","",true,false,false,"none"),
+new Question(22,3,"How are you today ?","","",false,false,true,"none"),
+new Question(23,3,"Great ! What is you favorite color ? ","","",false,false,true,"favoriteColor"),
+new Question(24,3,"I'm sad to hear it.","","",false,true,false,"none"),
 ];
 
 //id, idScenario, idQuestion, idNextQuestion, analysisEN, analysisFR, analysisJP, dataType, dataValue
@@ -44,13 +43,10 @@ _listOfReplies = [
 	new Reply(13,2,13,14,"*","*","*","none",0),
 	new Reply(14,2,14,15,"*","*","*","none",0),
 
-new Reply(30,3,31,32,"*","oui, bien sur, effet, super","*","none",0),
-new Reply(31,3,31,33,"*","non, bof, pas, ne, mal","*","none",0),
-new Reply(32,3,31,34,"*","*","*","none",0),
-new Reply(33,3,32,35,"*","*","*","none",0),
-new Reply(34,3,30,31,"*","*","*","none",0),
-new Reply(35,3,33,32,"*","*","*","none",0),
-new Reply(36,3,34,31,"*","*","*","none",0),
+new Reply(20,3,22,23,"good very great super awesome vibe","*","*","mentally",1),
+new Reply(21,3,22,24,"Not no poor bad sick tired","*","*","mentally",-1),
+new Reply(22,3,23,20,"*","*","*","none",0),
+new Reply(23,3,21,22,"*","*","*","none",0),
 ];
 
 
